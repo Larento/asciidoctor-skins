@@ -6,7 +6,7 @@ addSwitcher();
 function switchCss(css) {
   link = document.getElementsByTagName("link");
   last = link[link.length - 1];
-  last.href = "https://darshandsoni.com/asciidoctor-skins/css/" + css + ".css";
+  last.href = "css/" + css + ".css";
 }
 
 function capitalize(s) {
@@ -36,7 +36,7 @@ function addSwitcher() {
   link = document.createElement('link');
   link.rel="stylesheet";
   link.type="text/css";
-  link.href="https://darshandsoni.com/asciidoctor-skins/css/" + skins[0] + ".css";
+  link.href="css/" + skins[0] + ".css";
   head.appendChild(link);
 
   var header = document.getElementById("header");
