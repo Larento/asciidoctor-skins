@@ -5,6 +5,9 @@ Firstname Lastname <author@asciidoctor.org>
 :toclevels: 5
 :icons: font
 :stem: latexmath
+:experimental:
+:source-highlighter: rouge
+:source-linenums-option:
 :quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 
 Content entered directly below the header but before the first section heading is called the preamble.
@@ -167,6 +170,15 @@ Sidebars contain aside text and are subject to normal substitutions.
 ----
 Content in a listing block is subject to verbatim substitutions.
 Listing block content is commonly used to preserve code input.
+----
+
+[source,ruby]
+----
+class MyCode
+  def say_hi
+    puts "Here is some syntax-highlighted Ruby code."
+  end
+end
 ----
 
 == Tables
